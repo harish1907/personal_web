@@ -61,7 +61,7 @@ class Company(db.Model):
         self.message = message
 
 
-# db.create_all()
+db.create_all()
 
 
 @app.route("/")
