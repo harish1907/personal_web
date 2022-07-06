@@ -1,0 +1,283 @@
+body {
+   margin: 0 5%;
+   font-family: 'Anek Latin', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+i {
+    font-size: 20px;
+    color: #252A34;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: left;
+    margin-right: 60px;
+}
+
+h2 {
+    font-weight: 200;
+    margin-bottom: 5%;
+
+}
+
+h5 {
+    margin-bottom: 20px;
+}
+
+/* nav bar settings. */
+
+.navbar{
+    background-color:#fff;
+}
+
+.navbar-nav {
+    margin-left: 54%;
+}
+
+.nav-link, .active, .submit{
+    color: black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 5%;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    background-color: #08D9D6;
+    color: #252A34;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.active {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 5px 8px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 3%;
+    text-decoration: none;
+    background-color: #08D9D6;
+    color: #252A34;
+}
+
+/* profile setting */
+
+.profile{
+    /*background-color: #F0FFFF;*/
+    background-image: linear-gradient(#00E0FF, #fff);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: 600px;
+}
+
+.profile-picture {
+    height: 600px;
+    padding: 12px 0;
+}
+
+.line{
+    height: 5px;
+    width: 70px;
+    background-color: black;
+    margin: 5% 0;
+}
+
+.hire-me{
+    border-radius: 0;
+}
+
+.myname{
+    padding: 7% 5%;
+}
+
+/*bottom bar*/
+.icon {
+    margin: 0 5%;
+}
+
+
+.iconss{
+    margin-left: 55%;
+}
+
+.bottom-bar{
+    margin-top: 1%;
+}
+
+/* about me */
+
+.about-line{
+    margin-top: 2%;
+    height: 2px;
+    background: black;
+}
+
+
+.about-me{
+    width: 25%;
+}
+
+.little_info{
+    padding: 5% 10% 0 2%;
+}
+
+.about-scroll{
+    width: 100%;
+    height: 350px;
+    overflow-y:auto;
+    float:left;
+    position:relative;
+    margin
+    margin-left:-5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #00E0FF;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #126E82;
+}
+
+/* line height */
+li {
+    line-height: 0.5;
+}
+
+/* skills */
+
+.skills{
+  width: 100%;
+  max-width: 650px;
+  padding: 0 2rem;
+  line-height: 0.5px;
+}
+
+.skill-name{
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 14px;
+  background: #252A34;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: #08D9D6;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #126E82;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+/* Contact */
+.c-detail{
+    margin: 1rem 1rem 1rem 0;
+    padding: 4%;
+    text-align: center;
+    width: 30%;
+    height: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.c-container{
+    margin-top: 10px;
+}
+
+input, .u-detail{
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-radius: 10%;
+    width: 200%;
+    padding: 7%;
+    margin: 5% 5% 5% -9%;
+}
+
+.map{
+    margin-left: 22%;
+    margin-top: 3%;
+}
+
+.flash{
+    width: 200%;
+    margin: 0;
+    margin-left: -1rem;
+    padding:0;
+    text-align: center;
+    color: #151D3B;
+}
+
+/* Hire me */
+.company{
+    width: 285%;
+    margin: 1.5rem 0 -1rem 0;
+}
+
+.whatsapp{
+    padding: 1.5%;
+}
+
+.company-flash{
+    text-align: right;
+    margin-right: 1rem;
+}

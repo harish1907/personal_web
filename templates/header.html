@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!--    bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!--    google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--    font awsome icons-->
+    <script src="https://kit.fontawesome.com/88c6d2f34f.js" crossorigin="anonymous"></script>
+
+    <!--    TaskBar icon-->
+    <link rel="icon" href="static/image/light.png">
+
+
+    <!--    css file-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+
+    {% block addsome %} {% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">𒆜🅿🆁🅾🅵🅸🅻🅴</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-link" href="{{ url_for('homepage') }}">Home</a>
+              <a class="nav-link" href="{{ url_for('about') }}">About</a>
+              <a class="nav-link" href="{{ url_for('skills') }}">Skills</a>
+              <a class="nav-link" href="{{ url_for('hire') }}">HireMe</a>
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid profile">
+        <div class="row">
+            <div class="col-5">
+              <img class="profile-picture" src="static/image/me.jpg">
+            </div>
+            <div class="col-7 myname">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bottom-bar">
+        <div class="row align-items-center">
+            <div class="col-7">
+                <p>Copyright © {% block year %}{% endblock %}</p>
+            </div>
+
+            <div class="col">
+                <div class="row iconss">
+                    <div class="col-1 icon">
+                        <a href="https://www.facebook.com/harish.chaudhary.176487"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="col-1 icon">
+                        <a href="https://www.instagram.com/_enmity19_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="col-1 icon">
+                        <a href="https://github.com/harish1907"><i class="fa-brands fa-github-square"></i></a>
+                    </div>
+                    <div class="col-1 icon">
+                        <a href="https://www.linkedin.com/in/harish-chaudhary-0b506623b/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-1 icon">
+                        <a href="https://twitter.com/harishc27242373"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length
+        for (let i = 0; i < menuLength; i++){
+            if(menuItem[i].href === currentLocation){
+                menuItem[i].className = "active"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "header.html" %}
+{% block title %}Harish{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-4 about-me">
+        <h5 class="contact">HIRE ME</h5>
+    </div>
+    <div class="col-8 about-line get-line"></div>
+</div>
+
+<div class="col-8 col-sm-4">
+
+          {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p class="company-flash flash">{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+          {% endwith %}
+    <form action="{{ url_for('hire') }}" method="post">
+        <input type="text" name="c-name" placeholder="Company name" class="u-detail company">
+        <input type="email" name="c-email" placeholder="Company email" class="u-detail company">
+        <input type="text" name="c-ctc" placeholder="Company CTC" class="u-detail company">
+        <textarea type="message" name="c-message" placeholder="Enter your message" class="u-detail company"></textarea>
+        <input type="submit" name="submit" value="SUBMIT" class="btn btn-info company">
+
+    </form>
+    <a href="https://wa.me/917053118068" class="btn btn-info company" role="button"><i class="fa-brands fa-whatsapp whatsapp"></i>START CHAT</a>
+
+</div>
+
+{% endblock %}
+
+{% block year %}
+{{year}}
+{% endblock %}
