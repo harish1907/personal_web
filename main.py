@@ -7,7 +7,7 @@ import os
 year = datetime.now().year
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL", "postgresql://postgres:tiger@localhost/detail")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE", "postgresql://postgres:tiger@localhost/detail")
 #"postgresql://postgres:tiger@localhost/detail"
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
