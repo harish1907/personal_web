@@ -37,7 +37,7 @@ h5 {
 }
 
 .navbar-nav {
-    margin-left: 54%;
+    margin-left: 45%;
 }
 
 .nav-link, .active, .submit{
@@ -133,8 +133,7 @@ h5 {
     overflow-y:auto;
     float:left;
     position:relative;
-    margin
-    margin-left:-5px;
+    margin-left: -5px;
 }
 
 /* width */
@@ -199,7 +198,6 @@ li {
   content: attr(per);
   position: absolute;
   padding: 4px 6px;
-  background: #;
   border-radius: 4px;
   font-size: 12px;
   top: -35px;
