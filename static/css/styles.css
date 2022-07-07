@@ -284,6 +284,7 @@ input, .u-detail{
 
     body{
         text-align: center;
+        text-size: 100%;
     }
 
     /* index page */
@@ -293,7 +294,8 @@ input, .u-detail{
     }
 
     .profile-picture {
-        height: 70%;
+        margin-top: 5%;
+        height: 100%;
         padding: 8.5%;
         text-align: center;
     }
@@ -310,7 +312,7 @@ input, .u-detail{
         font-size: 210%;
         width: 100%;
         text-align: center;
-        margin-top: -10%;
+        margin-top: 40%;
 
     }
 
@@ -321,7 +323,7 @@ input, .u-detail{
     .line{
         height: 0.1875rem;
         width: 3rem;
-        margin-left: 3rem;
+        margin-left: 16rem;
     }
 
     .python{
@@ -331,12 +333,12 @@ input, .u-detail{
     /* bottom header */
     .year{
         margin:0;
-        padding:30% 20% 0 20%;
+        padding:20% 20% 0 20%;
     }
 
     .iconss{
         width: 60%;
-        margin-top: -45%;
+        margin-top: -35%;
         margin-left: 20%;
     }
 }
