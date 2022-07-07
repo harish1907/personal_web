@@ -324,12 +324,12 @@ input, .u-detail{
     /* bottom header */
     .year{
         margin:0;
-        padding:20% 20% 0 20%;
+        padding:30% 20% 0 20%;
     }
 
     .iconss{
         width: 60%;
-        margin-top: -35%;
+        margin-top: -40%;
         margin-left: 22%;
     }
 
@@ -337,6 +337,8 @@ input, .u-detail{
         font-size: 250%;
     }
 
-
+    .year, .fa-brands{
+        font-size: 2rem;
+    }
 
 }
