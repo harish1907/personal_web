@@ -300,6 +300,15 @@ input, .u-detail{
         text-align: center;
     }
 
+    h1{
+        text-align: center;
+        margin-top:50%;
+    }
+
+    .line{
+        margin-left:6rem;
+    }
+
     .col-lg-5{
         margin-bottom: -50%;
     }
@@ -308,23 +317,7 @@ input, .u-detail{
         padding: 15% 3%;
     }
 
-    h1{
-        font-size: 210%;
-        width: 100%;
-        text-align: center;
-        margin-top: 40%;
 
-    }
-
-    h2{
-        font-size: 125%;
-    }
-
-    .line{
-        height: 0.1875rem;
-        width: 3rem;
-        margin-left: 16rem;
-    }
 
     .python{
         margin: 3rem;
