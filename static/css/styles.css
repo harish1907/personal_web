@@ -317,8 +317,6 @@ input, .u-detail{
         padding: 15% 3%;
     }
 
-
-
     .python{
         margin: 3rem;
     }
@@ -332,6 +330,13 @@ input, .u-detail{
     .iconss{
         width: 60%;
         margin-top: -35%;
-        margin-left: 20%;
+        margin-left: 22%;
     }
+
+    .nav-link, .active, .navbar-brand{
+        font-size: 250%;
+    }
+
+
+
 }
